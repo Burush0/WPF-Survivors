@@ -1,0 +1,41 @@
+﻿<Application x:Class="ExamGame.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ExamGame"
+             StartupUri="StartWindow.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="Cormorant">fonts/Cormorant-Bold.ttf#Cormorant</FontFamily>
+        <SolidColorBrush x:Key="OpacityBrush" Color="#99000000" />
+        <LinearGradientBrush x:Key="GoldGradient" StartPoint="0,0" EndPoint="1,0">
+            <GradientStop Color="Gold" Offset="0"/>
+            <GradientStop Color="Orange" Offset="1"/>
+        </LinearGradientBrush>
+        <Style x:Key="TextColor" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource GoldGradient}"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="2" Opacity="1"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="PixelButton" TargetType="Button">
+            <Setter Property="Padding" Value="4"/>
+            <Setter Property="FontFamily" Value="{StaticResource Cormorant}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Height="30">
+                            <Border Background="{StaticResource GoldGradient}" BorderBrush="Black" BorderThickness="1" CornerRadius="5"/>
+                            <TextBlock Text="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="PreviewMouseDown">
+                    <SoundPlayerAction Source="assets/sounds/sfx/menu1.wav" />
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Application.Resources>
+</Application>

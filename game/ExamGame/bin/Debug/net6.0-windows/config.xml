@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <SoundOptions>
+    <SfxVolume>0,6575671</SfxVolume>
+    <SfxEnabled>True</SfxEnabled>
+    <MusicVolume>0,13914168</MusicVolume>
+    <MusicEnabled>True</MusicEnabled>
+  </SoundOptions>
+</Configuration>

@@ -1,0 +1,58 @@
+﻿<Window x:Class="ExamGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamGame"
+        mc:Ignorable="d"
+        Cursor="assets/cursors/game.cur"
+        WindowState="Maximized"
+        WindowStyle="None"
+        KeyDown="OnKeyDown"
+        Background="Black"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid>
+        <Grid Panel.ZIndex="1">
+            <Grid x:Name="pauseScreen" Visibility="Hidden">
+                <Viewbox Height="1000" VerticalAlignment="Top">
+                    <StackPanel Margin="20">
+                        <TextBlock Text="Game paused" Style="{StaticResource TextColor}" FontSize="32" HorizontalAlignment="Center" />
+                        <Button Content="Resume" Click="ResumeGame_Click" Width="100" Style="{StaticResource PixelButton}" HorizontalAlignment="Center" Margin="0,20"/>
+                        <Button Content="Options" Click="Options_Click" Width="100" Style="{StaticResource PixelButton}" HorizontalAlignment="Center" />
+                        <Button Content="Save &amp; Quit" Click="SaveAndQuit_Click" Width="100" Style="{StaticResource PixelButton}" HorizontalAlignment="Center" Margin="0,20"/>
+                    </StackPanel>
+                </Viewbox>
+            </Grid>
+            <Grid x:Name="uiElements">
+                <Viewbox Height="200" VerticalAlignment="Top">
+                    <ProgressBar x:Name="levelProgressBar" Minimum="0" Maximum="100" Value="40" Width="100" Foreground="{StaticResource GoldGradient}"/>
+                </Viewbox>
+                <Viewbox Height="100" VerticalAlignment="Top" Margin="50">
+                    <StackPanel>
+                        <WrapPanel>
+                            <TextBlock Style="{StaticResource TextColor}" Text="Level: " HorizontalAlignment="Center" VerticalAlignment="Top" />
+                            <TextBlock Name="levelTextBlock" Style="{StaticResource TextColor}" Text="1" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                        </WrapPanel>
+                        <TextBlock x:Name="gameTime" Text="0:00" Style="{StaticResource TextColor}" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Viewbox>
+                <Viewbox HorizontalAlignment="Right" VerticalAlignment="Top" Width="200" Height="100">
+                    <Button Click="PauseGame_Click" Style="{StaticResource PixelButton}" Content="Pause" Width="100" VerticalAlignment="Top" Margin="0,20,20, 0"/>
+                </Viewbox>
+            </Grid>
+            <Grid x:Name="gameOverScreen" Visibility="Hidden">
+                <Viewbox Width="1000" Height="500">
+                    <StackPanel>
+                        <TextBlock Text="GAME OVER" FontWeight="Bold" FontSize="28" Style="{StaticResource TextColor}" Margin="10" HorizontalAlignment="Center" />
+                        <Button Click="Quit_Click" Style="{StaticResource PixelButton}" Content="Quit" Width="100" Margin="10" />
+                    </StackPanel>
+                </Viewbox>
+            </Grid>
+        </Grid>
+        <Grid x:Name="game">
+            <ScrollViewer x:Name="theScrollView" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" CanContentScroll="True">
+                <Canvas x:Name="gameCanvas" HorizontalAlignment="Center" VerticalAlignment="Center" Width="10000" Height="10000" MouseDown="Canvas_MouseDown"/>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>

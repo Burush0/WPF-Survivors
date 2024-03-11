@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ExamGame</id>
+    <version>1.0.0</version>
+    <authors>ExamGame</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="MySql.Data" version="8.2.0" exclude="Build,Analyzers" />
+        <dependency id="WpfAnimatedGif" version="2.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+    <contentFiles>
+      <files include="any/net6.0-windows7.0/assets/images/aoe.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/chess_tile.jpg" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/cooldown.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/curse.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/exp.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/gold.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/gold_gain.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/grass_tile.jpg" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/hpregen.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/maxhp.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/menu_bg.jpg" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/movespeed.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/proj_speed.png" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/skeleton.gif" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/skeleton_death.gif" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/wizard.gif" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/images/wizard_death.gif" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/sounds/bgm/stage1.mp3" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/sounds/bgm/stage2.mp3" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/sounds/sfx/game_over.wav" buildAction="Content" />
+      <files include="any/net6.0-windows7.0/assets/sounds/sfx/lvl_up.wav" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\4 kurs\WPF\ExamGame\bin\Debug\net6.0-windows\ExamGame.runtimeconfig.json" target="lib\net6.0-windows7.0\ExamGame.runtimeconfig.json" />
+    <file src="C:\4 kurs\WPF\ExamGame\bin\Debug\net6.0-windows\ExamGame.dll" target="lib\net6.0-windows7.0\ExamGame.dll" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\aoe.png" target="content\assets\images\aoe.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\aoe.png" target="contentFiles\any\net6.0-windows7.0\assets\images\aoe.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\chess_tile.jpg" target="content\assets\images\chess_tile.jpg" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\chess_tile.jpg" target="contentFiles\any\net6.0-windows7.0\assets\images\chess_tile.jpg" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\cooldown.png" target="content\assets\images\cooldown.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\cooldown.png" target="contentFiles\any\net6.0-windows7.0\assets\images\cooldown.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\curse.png" target="content\assets\images\curse.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\curse.png" target="contentFiles\any\net6.0-windows7.0\assets\images\curse.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\exp.png" target="content\assets\images\exp.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\exp.png" target="contentFiles\any\net6.0-windows7.0\assets\images\exp.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\gold.png" target="content\assets\images\gold.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\gold.png" target="contentFiles\any\net6.0-windows7.0\assets\images\gold.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\gold_gain.png" target="content\assets\images\gold_gain.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\gold_gain.png" target="contentFiles\any\net6.0-windows7.0\assets\images\gold_gain.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\grass_tile.jpg" target="content\assets\images\grass_tile.jpg" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\grass_tile.jpg" target="contentFiles\any\net6.0-windows7.0\assets\images\grass_tile.jpg" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\hpregen.png" target="content\assets\images\hpregen.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\hpregen.png" target="contentFiles\any\net6.0-windows7.0\assets\images\hpregen.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\maxhp.png" target="content\assets\images\maxhp.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\maxhp.png" target="contentFiles\any\net6.0-windows7.0\assets\images\maxhp.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\menu_bg.jpg" target="content\assets\images\menu_bg.jpg" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\menu_bg.jpg" target="contentFiles\any\net6.0-windows7.0\assets\images\menu_bg.jpg" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\movespeed.png" target="content\assets\images\movespeed.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\movespeed.png" target="contentFiles\any\net6.0-windows7.0\assets\images\movespeed.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\proj_speed.png" target="content\assets\images\proj_speed.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\proj_speed.png" target="contentFiles\any\net6.0-windows7.0\assets\images\proj_speed.png" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\skeleton.gif" target="content\assets\images\skeleton.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\skeleton.gif" target="contentFiles\any\net6.0-windows7.0\assets\images\skeleton.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\skeleton_death.gif" target="content\assets\images\skeleton_death.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\skeleton_death.gif" target="contentFiles\any\net6.0-windows7.0\assets\images\skeleton_death.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\wizard.gif" target="content\assets\images\wizard.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\wizard.gif" target="contentFiles\any\net6.0-windows7.0\assets\images\wizard.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\wizard_death.gif" target="content\assets\images\wizard_death.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\images\wizard_death.gif" target="contentFiles\any\net6.0-windows7.0\assets\images\wizard_death.gif" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\bgm\stage1.mp3" target="content\assets\sounds\bgm\stage1.mp3" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\bgm\stage1.mp3" target="contentFiles\any\net6.0-windows7.0\assets\sounds\bgm\stage1.mp3" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\bgm\stage2.mp3" target="content\assets\sounds\bgm\stage2.mp3" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\bgm\stage2.mp3" target="contentFiles\any\net6.0-windows7.0\assets\sounds\bgm\stage2.mp3" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\sfx\game_over.wav" target="content\assets\sounds\sfx\game_over.wav" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\sfx\game_over.wav" target="contentFiles\any\net6.0-windows7.0\assets\sounds\sfx\game_over.wav" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\sfx\lvl_up.wav" target="content\assets\sounds\sfx\lvl_up.wav" />
+    <file src="C:\4 kurs\WPF\ExamGame\assets\sounds\sfx\lvl_up.wav" target="contentFiles\any\net6.0-windows7.0\assets\sounds\sfx\lvl_up.wav" />
+  </files>
+</package>

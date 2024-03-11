@@ -1,0 +1,48 @@
+﻿<Window x:Class="ExamGame.LevelSelectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamGame"
+        mc:Ignorable="d"
+        Cursor="assets/cursors/menu.cur"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="LevelSelectWindow" Height="1080" Width="1920">
+    <Window.Background>
+        <ImageBrush ImageSource="assets/images/menu_bg.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Viewbox>
+            <StackPanel Margin="20">
+                <TextBlock Text="Level Select" HorizontalAlignment="Center" FontSize="32" Style="{StaticResource TextColor}" />
+                <Border Background="Gray" BorderBrush="{StaticResource GoldGradient}" BorderThickness="2" CornerRadius="5">
+                    <StackPanel Background="{StaticResource OpacityBrush}" Margin="5">
+                        <Border x:Name="lvl1" MouseLeftButtonDown="Select_Lvl1_Click" BorderBrush="{StaticResource GoldGradient}" BorderThickness="2">
+                            <StackPanel>
+                                <TextBlock Text="1. Grasslands" Style="{StaticResource TextColor}" />
+                                <WrapPanel Margin="1">
+                                    <Image Source="assets/images/grass_tile.jpg" Height="30"/>
+                                    <TextBlock Padding="5" Style="{StaticResource TextColor}" Width="100" Text="Your regular grassy tutorial area." FontSize="10" TextWrapping="Wrap"/>
+                                </WrapPanel>
+                            </StackPanel>
+                        </Border>
+                        <Border x:Name="lvl2" BorderThickness="2" MouseLeftButtonDown="Select_Lvl2_Click">
+                            <StackPanel>
+                                <TextBlock Text="2. The Chess Land" Style="{StaticResource TextColor}" />
+                                <WrapPanel Margin="1">
+                                    <Image Source="assets/images/chess_tile.jpg" Height="30"/>
+                                    <TextBlock Padding="5" Style="{StaticResource TextColor}" Width="100" Text="The land of the chess pieces." FontSize="10" TextWrapping="Wrap"/>
+                                </WrapPanel>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Border>
+                <Button Content="Play" Click="StartGame_Click" Width="100" Style="{StaticResource PixelButton}" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Right" VerticalAlignment="Top" Width="400" Height="200">
+            <Button Click="BackBtn_Click" Style="{StaticResource PixelButton}" Content="Back" Width="100" VerticalAlignment="Top" Margin="0,20,20, 0"/>
+        </Viewbox>
+    </Grid>
+</Window>

@@ -1,0 +1,94 @@
+﻿<Window x:Class="ExamGame.UpgradesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamGame"
+        mc:Ignorable="d"
+        Cursor="assets/cursors/menu.cur"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="UpgradesWindow" Height="1080" Width="1920">
+    <Window.Background>
+        <ImageBrush ImageSource="assets/images/menu_bg.jpg"/>
+    </Window.Background>
+    <Grid Margin="15">
+        <Viewbox Height="125" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Border BorderThickness="5" CornerRadius="5" BorderBrush="{StaticResource GoldGradient}">
+                <StackPanel Width="350" Margin="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Background="DarkGray">
+                    <Image Source="assets/images/gold.png" HorizontalAlignment="Center"/>
+                    <TextBlock x:Name="goldAmount" Text="0" Margin="10" FontSize="72" VerticalAlignment="Center" HorizontalAlignment="Center" Style="{StaticResource TextColor}"/>
+                </StackPanel>
+            </Border>
+        </Viewbox>
+        <Viewbox Width="350" VerticalAlignment="Top" Margin="0,200,0,0">
+            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="5" Background="Gray">
+                <StackPanel>
+                    <WrapPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <Border x:Name="hpBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="HP_Click">
+                                <Image Source="assets/images/maxhp.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="hpLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <Border x:Name="regenBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="Regen_Click">
+                                <Image Source="assets/images/hpregen.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="regenLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <Border x:Name="msBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="MoveSpeed_Click">
+                                <Image Source="assets/images/movespeed.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="msLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <Border x:Name="cdrBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="CDR_Click">
+                                <Image Source="assets/images/cooldown.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="cdrLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <Border x:Name="aoeBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="AOE_Click">
+                                <Image Source="assets/images/aoe.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="aoeLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <Border x:Name="projBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="ProjSpeed_Click">
+                                <Image Source="assets/images/proj_speed.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="projLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                    </WrapPanel>
+                    <WrapPanel Orientation="Horizontal">
+                        <StackPanel>
+                            <Border x:Name="expBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="EXP_Click">
+                                <Image Source="assets/images/exp.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="expLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <Border x:Name="goldBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="Gold_Click">
+                                <Image Source="assets/images/gold_gain.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="goldLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <Border x:Name="curseBorder" BorderThickness="2" Margin="5" CornerRadius="5" MouseDown="Curse_Click">
+                                <Image Source="assets/images/curse.png" Width="50" Margin="5" />
+                            </Border>
+                            <TextBlock x:Name="curseLvlText" Text="0" TextAlignment="Center" FontSize="16" Style="{StaticResource TextColor}" />
+                        </StackPanel>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+        </Viewbox>
+        <Viewbox HorizontalAlignment="Right" VerticalAlignment="Top" Width="400" Height="200">
+            <Button Click="BackBtn_Click" Style="{StaticResource PixelButton}" Content="Back" Width="100" VerticalAlignment="Top" Margin="0,20,20, 0"/>
+        </Viewbox>
+    </Grid>
+</Window>

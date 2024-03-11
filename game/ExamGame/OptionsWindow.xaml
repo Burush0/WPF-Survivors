@@ -1,0 +1,35 @@
+﻿<Window x:Class="ExamGame.OptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamGame"
+        mc:Ignorable="d"
+        Cursor="assets/cursors/menu.cur"
+        WindowState="Maximized"
+        WindowStyle="None"
+        Title="OptionsWindow" Height="450" Width="800">
+    <Window.Background>
+        <ImageBrush ImageSource="assets/images/menu_bg.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Viewbox Width="500">
+            <Border Background="Gray" CornerRadius="5" BorderBrush="{StaticResource GoldGradient}" BorderThickness="2">
+                <StackPanel Margin="5">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <TextBlock Text="SFX" VerticalAlignment="Center"  Style="{StaticResource TextColor}" Margin="5"/>
+                        <Slider Width="75" x:Name="sfxVolumeSlider" Minimum="0" Maximum="100" VerticalAlignment="Center"/>
+                        <CheckBox x:Name="sfxEnabledCheckbox" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Music" VerticalAlignment="Center"  Style="{StaticResource TextColor}" Margin="5"/>
+                        <Slider Width="75" x:Name="musicVolumeSlider" Minimum="0" Maximum="100" VerticalAlignment="Center"/>
+                        <CheckBox x:Name="musicEnabledCheckbox" VerticalAlignment="Center"/>
+                    </StackPanel>
+
+                    <Button Content="Save" Click="SaveButton_Click" Style="{StaticResource PixelButton}" Width="100" />
+                </StackPanel>
+            </Border>
+        </Viewbox>
+    </Grid>
+</Window>

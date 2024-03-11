@@ -1,0 +1,20 @@
+﻿ExamGame
+
+
+winexe
+C#
+.cs
+C:\4 kurs\WPF\ExamGame\obj\Release\net6.0-windows\
+ExamGame
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\4 kurs\WPF\ExamGame\App.xaml
+10223945707
+211344333584
+19-1939227851
+203702146592
+GameWindow.xaml;LeaderboardsWindow.xaml;LevelSelectWindow.xaml;LoadingWindow.xaml;LoginWindow.xaml;OptionsWindow.xaml;RegistrationWindow.xaml;ResultWindow.xaml;StartWindow.xaml;UpgradesWindow.xaml;
+
+False
+
